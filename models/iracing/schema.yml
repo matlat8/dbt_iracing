@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_drivers
+    description: "Fact information about iRacing drivers"
+    columns:
+      - name: cust_id
+        description: "Surrogate PK"
+        data_tests:
+          - unique
+          - not_null
